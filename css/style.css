@@ -1,0 +1,802 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blog {
+    background-color: #3D4450;
+}
+
+.v_title {
+    color: #fff;
+    font-size: 54px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-family: open sans;
+}
+
+.video_container {
+    padding: 12px 12%;
+}
+
+.videos_live {
+    width: 33%;
+    height: 250px;
+
+}
+
+.links {
+    text-decoration: none;
+}
+
+hr {
+    width: 10px;
+    border: 1px solid #354053;
+}
+
+.header {
+    background-color: rgb(255, 225, 0);
+    filter: brightness(100%);
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85px;
+    padding: 0% 3%;
+}
+
+.icon {
+    color: black;
+    font-family: 'Rajdhani';
+    font-size: 35px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.header_container li {
+    padding-right: 24px;
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 24px;
+
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.header_a {
+    text-decoration: none;
+    color: #001069;
+    font-family: open sans;
+}
+
+.header_reg {
+    background-color: #142169;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container {
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header {
+    background-color: rgb(255, 225, 0);
+    filter: brightness(100%);
+    box-shadow: 1px 2px 3px blue;
+}
+
+.header_vhod {
+    font-family: open sans;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.header_reg:hover {
+    background-color: #000;
+}
+
+.ul_links,
+.a_links {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #274C5B;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.head_imgs {
+    align-items: center;
+    display: flex;
+}
+
+.header_input_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_input {
+    width: 336px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid #e2e2e2;
+    background: #e2e2e2;
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.header_a {
+    text-decoration: none;
+    color: #001069;
+    font-family: open sans;
+}
+
+.humburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.humburger-line {
+    background-color: #6fa282;
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 30px;
+}
+
+.humburger-line::before,
+.humburger-line::after {
+    background-color: #7EB693;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.humburger-line::before {
+    top: 7px;
+}
+
+.humburger-line::after {
+
+    top: -7px;
+}
+
+@media (max-width:1000px) {
+    .navbar {
+        background-color: #274C5B;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 30px;
+
+    }
+
+    .head_imgs {
+        display: none;
+    }
+
+    #checkbox_toggle:checked~.navbar {
+        display: block;
+        max-height: 100px;
+        transition: all 0.5s;
+    }
+
+    #checkbox_toggle:checked~.humburger .humburger-line {
+        background-color: transparent;
+    }
+
+    #checkbox_toggle:checked~.humburger .humburger-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #checkbox_toggle:checked~.humburger .humburger-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .humburger {
+        display: block;
+        padding: 0 15px;
+    }
+
+    .navbar .ul_links .a_links {
+        color: #fff;
+        display: block;
+        padding: 15px;
+
+    }
+}
+.hero {
+    background: url(https://4pda.to/s/as6yvlaDI4IYYmWVdLBNHISb5z0oF.jpg);
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.category {
+    min-height: 50vh;
+    background-color: #354053;
+}
+
+.category_title {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: open sans;
+    padding-top: 3%;
+}
+
+.category_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2% 10%;
+    flex-wrap: wrap;
+}
+
+.category_survival_img {
+    height: 250px;
+    width: 250px;
+    filter: brightness(60%);
+    transition: all 0.3s;
+}
+
+.category_survival_img:hover {
+    scale: 1.07;
+    filter: brightness(130%);
+}
+
+.category_survival_title {
+    text-align: center;
+    font-family: 'open sans';
+    color: #fff;
+    font-weight: 500;
+}
+
+.slide {
+    background-color: #31353c;
+}
+
+.slider_title {
+    font-family: open sans;
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+    text-align: center;
+    padding: 3% 0%;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #000;
+    background: #000;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#slides .slide_1 {
+    background: url(https://rushbe.ru/_next/image?url=https%3A%2F%2Frushbe.ru%2Fmedia%2Fcover1_1683190189084.webp&w=1920&q=75);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#slides .slide_2 {
+    background: url(https://prod.assets.earlygamecdn.com/images/naraka-bladepoint.jpg?mtime=1689777636);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#slides .slide_3 {
+    background: url(https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_ApexLegends_S13_image1600w.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#slides .slide_4 {
+    background: url(https://cdnx.jumpseller.com/gtigx1/image/18585939/1366_2000.jpg.jpg?1630369878);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(1) {
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked~#controls label:nth-last-child(2),
+#slide2:checked~#controls label:nth-last-child(3),
+#slide3:checked~#controls label:nth-last-child(4),
+#slide4:checked~#controls label:nth-last-child(1) {
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 19px;
+    height: 13px;
+    background: #ccc;
+    margin: 0 5px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+
+    #slide1:checked~#controls label:nth-child(2),
+    #slide2:checked~#controls label:nth-child(3),
+    #slide3:checked~#controls label:nth-child(4),
+    #slide4:checked~#controls label:nth-child(1),
+    #slide1:checked~#controls label:nth-last-child(2),
+    #slide2:checked~#controls label:nth-last-child(3),
+    #slide3:checked~#controls label:nth-last-child(4),
+    #slide4:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:800px) {
+    #slides {
+        max-width: 100%;
+    }
+
+    #slides .slide_3 {
+        background: url(https://upload.wikimedia.org/wikipedia/ru/1/17/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_Apex_Legends.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #slides .slide_1 {
+        background: url(https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/09d5b936da100fb0b96a2cdaa96a835e143b41b3e3ae0054.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    #slides .slide_2 {
+        background: url(https://upload.wikimedia.org/wikipedia/ru/3/3b/Naraka_Bladepoint_cover.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+}
+
+
+.cybersport {
+    background: url(https://bogatyr.club/uploads/posts/2023-03/1679145727_bogatyr-club-p-kibersportivnii-fon-foni-oboi-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.cybersport_container {
+    display: grid;
+    align-items: center;
+    min-height: 80vh;
+    margin-left: 4%;
+}
+
+.cybersport_title {
+    font-family: 'Tulpen One', cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+}
+
+.btn {
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid red;
+    outline: none;
+    color: red;
+    transition: 1s ease-in-out;
+}
+
+z .btn:hover {
+    transition: 0.5s ease-in-out;
+    background: red;
+}
+
+.btn .span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.our {
+    background-color: #3D4450;
+
+}
+
+.our_container {
+    padding: 12px 12%;
+
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+
+}
+
+.partners_icon {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s ease;
+}
+
+.partners_icon:hover {
+    filter: brightness(120%);
+    scale: 1.05;
+    transition: all 0.5s ease;
+}
+
+.our_title {
+    text-align: center;
+    color: #fff;
+    font-size: 54px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-family: open sans;
+}
+
+@media (max-width:910px) {
+    .partners {
+        display: grid;
+        justify-content: center;
+
+    }
+}
+
+.aside {
+    background-color: #3D4450;
+    display: flex;
+    align-items: center;
+    padding: 0 14%;
+}
+
+.aside .aside_nav ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.aside .aside_nav ul li a {
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #3D4450;
+    display: block;
+    text-decoration: none;
+    font-family: open sans;
+}
+
+.aside_nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    display: none;
+}
+
+.aside_nav ul li:hover>ul {
+    display: initial;
+}
+
+.aside_nav ul li ul li {
+    width: 100%;
+    border: 1px solid #354053;
+}
+
+.aside_nav ul li ul li:hover {
+    opacity: 0.8;
+}
+
+
+
+
+.footer {
+    background-color: rgb(255, 157, 0);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 3% 10%;
+}
+
+.footer_1_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 19);
+    font-size: 30px;
+    margin-bottom: 4%;
+}
+
+.footer_1_subtitles {
+    color: #000;
+    font-family: open sans;
+    font-size: 20px;
+    margin-bottom: 4%;
+    transition: all ease-in-out 0.3s;
+}
+
+.footer_1_subtitles:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    color: #121212;
+}
+
+.maders {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.maders_con,
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.maders_con_title {
+    display: grid;
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.contact_numbers {
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 10%;
+}
+
+.footer_svg {
+    width: 50px;
+}
+
+.maders_logo {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+
+.card_svg {
+    width: 100px;
+}
+
+.footer_2_subtitles {
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer_input {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 16px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #000;
+    border-image: initial;
+}
+
+.bottom {
+    background-color: #354053;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 12%;
+    align-items: center;
+}
+
+.cards_opl {
+    display: flex;
+    align-items: center;
+}
+
+.cookie {
+    color: #fff;
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.cookie:hover {
+    text-decoration: underline;
+}
+
+.sposob {
+    color: #fff;
+    font-family: open sans;
+    font-weight: 500;
+}
+
+@media (max-width:1300px) {
+    .footer_container {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact_numbers {
+        margin: 0;
+    }
+
+    .maders_con,
+    .contacts {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer_bottom {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards_opl {
+        display: grid;
+    }
+}
+
+@media (max-width:1050px) {
+    .videos {
+        display: grid;
+        justify-content: center;
+
+    }
+
+    .v_title {
+        text-align: center;
+    }
+
+    .videos_live {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .icon {
+        text-align: center;
+    }
+}

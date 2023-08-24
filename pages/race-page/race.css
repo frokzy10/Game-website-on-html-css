@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ekshen_popular {
+    background-color: #3D4450;
+}
+
+.ekshen_pop_blocks_con {
+    display: flex;
+
+}
+
+.ekshen_pop_con {
+    padding: 3% 12%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.ekshen_title_pop {
+    font-family: open sans;
+    font-weight: 500;
+    color: #fff;
+    margin: 3% 1.5%;
+}
+
+.popular {
+    height: 80%;
+    width: 330px;
+}
+
+.categories_icons_con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale_cost {
+    color: #beee11;
+    background-color: #4c6b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: open sans;
+    font-weight: 400;
+}
+
+.ecshen {
+    background-color: #354053;
+}
+
+.ekshen_container {
+    display: grid;
+    justify-content: center;
+    padding: 3%;
+}
+
+.categories_first_con {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.categories_first_line {
+    width: 550px;
+    height: 320px;
+}
+
+.ekshen_blocks {
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    transition: ease-in-out 0.3s;
+}
+
+.ekshen_blocks:hover,
+.categories_2_blocks:hover,
+.categories_3_blocks:hover {
+    scale: 1.08;
+    box-shadow: 4px 4px 38px 21px rgba(0, 0, 0, 0.25);
+}
+
+.categories_bottom {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 0% 2%;
+    display: flex;
+    align-items: center;
+}
+
+.categories_cost_con {
+    color: #fff;
+}
+
+.categories_last_cost {
+    color: #666;
+    font-family: open sans;
+    font-weight: 500;
+}
+
+.categories_cost_con {
+    font-family: open sans;
+    font-weight: 500;
+}
+
+.categories_new_cost {
+    color: #fff;
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.bottom_svg {
+    width: 30%;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.ekshen_hot_title {
+    font-family: 'open sans';
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 1.5%;
+    margin-left: 1%;
+}
+
+.categories_2_blocks {
+    width: 370px;
+    margin-left: 1.5%;
+    transition: ease-in-out 0.3s;
+}
+
+.categories_2_con {
+    display: flex;
+}
+
+.categories_second_line {
+    width: 361.5px;
+    height: 210px;
+}
+
+.categories_third_line {
+    width: 266.7px;
+    height: 150px;
+}
+
+.categories_3_con {
+    display: flex;
+    align-items: center;
+}
+
+.categories_3_blocks {
+    width: 280px;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    transition: all ease-in-out 0.4s;
+}
+
+.all {
+    background-color: #3D4450;
+}
+
+.all_titles_con {
+    width: 100%;
+    padding: 0% 20px;
+}
+
+.all_container {
+    display: grid;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 3% 8%;
+
+}
+
+.all_block {
+    display: flex;
+    width: 100%;
+    background-color: #2f3339;
+    border-radius: 10px;
+    box-shadow: 4px 4px 51px -2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.5%;
+}
+
+.game_name {
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 33px;
+    color: #fff;
+}
+
+.all_icons {
+    width: 30px;
+}
+
+.all_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all_ocenka {
+    font-family: open sans;
+    font-weight: 500;
+    color: #beee11;
+    font-size: 22px;
+}
+
+.all_ocenka_bad {
+    font-family: open sans;
+    font-weight: 500;
+    color: rgb(255, 255, 0);
+}
+
+.all_button_free {
+    background-image: radial-gradient(circle at top left, #85a805 10%, #6a8704 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 30px;
+    transition: box-shadow .2s ease-out;
+    height: 38px;
+    border: 1px solid #85a805;
+    color: #dfe3e6;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    margin-left: 200px;
+}
+
+.all_button_free:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.all_imgs {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media (max-width:1203px) {
+
+    .categories_2_con,
+    .categories_first_con,
+    .categories_3_con {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories_first_line,
+    .categories_second_line,
+    .categories_third_line {
+        width: 95%;
+        height: 90%;
+    }
+
+    .popular {
+        width: 95%;
+        height: 100%;
+    }
+
+    .categories_2_blocks,
+    .categories_3_blocks {
+        width: 95%;
+        margin-bottom: 3.5%;
+    }
+
+    .ekshen_blocks {
+        width: 95%;
+        margin: 3.5% 0;
+    }
+
+    .ekshen_pop_blocks_con {
+        display: grid;
+    }
+
+    .categories_bottom {
+        width: 95%;
+    }
+
+    .categories_2_blocks,
+    .categories_3_blocks,
+    .ekshen_blocks {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .categories_2_con,
+    .categories_first_con,
+    .categories_3_con {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categories_2_blocks,
+    .categories_3_blocks {
+       
+        margin-top: 6.5%;
+    }
+
+    .categories_first_line,
+    .categories_second_line,
+    .categories_third_line {
+        width: 100%;
+    }
+
+    .categories_bottom {
+        width: 100%;
+    }
+
+    .ekshen_pop_blocks_con {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1135px) {
+    .all_block {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+
+    .all_imgs {
+        width: 100%;
+    }
+
+    .all_titles_con {
+        padding: 0;
+    }
+
+    .all_bottom {
+        display: grid;
+        justify-content: center;
+    }
+
+    .all_button_free {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:650px) {
+
+    .categories_2_blocks,
+    .categories_3_blocks,
+    .ekshen_blocks {
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width:1370px) {
+    .popular {
+        width: 100%;
+        height: 80%;
+    }
+
+    .ekshen_pop_blocks_con {
+        display: flex;
+    }
+}
+
+@media (max-width:900px) {
+    .categories_last_cost {
+        font-size: 20px;
+    }
+
+    .categories_new_cost {
+        font-size: 20px;
+    }
+}

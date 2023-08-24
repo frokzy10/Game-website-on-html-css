@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Oswald:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://d21is3bk1bus90.cloudfront.net/images/inner-page/inner-page-brand-bg-desktop.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.unity_title {
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff !important;
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.ul_links,
+.a_links {
+    display: inline-block;
+    align-items: center;
+    margin: 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+}
+
+.a_links {
+    position: relative;
+    color: #fff;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+    margin-bottom: 5px;
+    font-size: 23px;
+    margin: 0px 10px;
+}
+
+.a_links:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: red;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.a_links:hover:after,
+.a_links:focus::after {
+    width: 100%;
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 8%;
+    gap: 30px;
+}
+
+.team__p {
+    width: 100%;
+    height: 60vh;
+    background: url(https://d21is3bk1bus90.cloudfront.net/images/team-card-bg.webp);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    background-size: cover;
+}
+.left::before {
+    content: "";
+    display: none;
+    width: 33px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .0001) 39.94%, var(--faze-black) 135.56%);
+    opacity: .35;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.left_title {
+    color: #fff;
+    font-size: 37px;
+    font-family: Oswald;
+    font-weight: 500;
+}
+
+.team_cards_img{
+    width: auto;
+    height: auto;
+    display: block;
+    max-height: 65px;
+    max-width: 150px;
+}
+.team_name {
+    color: rgb(255, 30, 0);
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.team_faces{
+    display: grid;
+    justify-content: center;
+    margin-top: -340px;
+}
+.img_player{
+    width: 600px;
+    height: 100%;
+}
+.img_fortnite{
+    height: 320px;
+    width: 100%;
+}
+.fortnite{
+    margin-top: -350px;
+}
+.rainbow{
+    height: 300px;
+}
+.img_pubg{
+    height: 70%;
+}
+.apex{
+    height: 300px;
+}
+.pubg{
+    margin-top: -330px;
+}
+.links{
+    text-decoration: none;
+}
+@media (max-width:830px){
+    .img_player{
+        width: 100%;
+    }
+    .img_fortnite{
+        height: 100%;
+    }
+    .team__p{
+        display: flex;
+        flex-direction: column;
+        padding: 5% ;
+    }
+    .team__container{
+        gap: 0px;
+    }
+    .team__p{
+        margin-bottom: 6%;
+    }
+    img{
+        display: none;
+    }
+    .team_faces{
+        margin: 0;
+    }
+}

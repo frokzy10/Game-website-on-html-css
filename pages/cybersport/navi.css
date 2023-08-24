@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Oswald:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://d21is3bk1bus90.cloudfront.net/images/inner-page/inner-page-brand-bg-desktop.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.unity_title {
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff !important;
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.ul_links,
+.li_links {
+    display: inline-block;
+    align-items: center;
+    margin: 0px 15px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.li_links {
+    position: relative;
+    color: #fff;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+    margin-bottom: 5px;
+}
+
+.li_links:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: red;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.li_links:hover:after,
+.li_links:focus::after {
+    width: 100%;
+}
+
+.esports_container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.a_links {
+    position: relative;
+    color: #fff;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+    margin-bottom: 5px;
+    font-size: 23px;
+    margin: 0px 10px;
+}
+.line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.players {
+    width: 15%;
+    transition: 0.4s ease-out;
+}
+.imgs{
+    width: 300px;
+    height: 300px;
+}
+
+.players:hover {
+    scale: 1.09;
+}
+
+.title {
+    font-size: 34px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.title:hover {
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.t_name {
+    width: 250px;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+
+.t_name:hover {
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+.imcs {
+    display: flex;
+    justify-content: center;
+}
+
+.im {
+    width: 90%;
+    height: 100%;
+
+}
+
+.ta {
+    text-decoration: none;
+    font-size: 55px;
+    color: rgb(62, 62, 62);
+    font-family: open sans;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.ta:hover {
+    color: rgb(151, 151, 151);
+    transition: all 0.3s ease;
+
+}
+
+@media (max-width:1008px){
+    .players{
+        width: 320px;
+        height: 320px;
+    }  
+    .line{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

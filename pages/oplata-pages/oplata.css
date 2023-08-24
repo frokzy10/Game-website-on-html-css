@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.oplata{
+    background-color: #3f4d65;
+}
+.oplata_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.oplata_title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 21px;
+}
+.oplata_1_block{
+    width: 330px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 12px;
+    padding: 12px;
+} 
+.oplata_2_block{
+    width: 330px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 12px;
+    padding: 12px;
+}
+.olata_number{
+    color: rgb(200, 124, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.inputs{
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    border:0.6px solid #fff;
+    background-color: transparent;
+    padding-left: 2%;
+    outline: none;
+    transition: all ease-in-out 0.3s;
+}
+.inputs:hover{
+    background-color: #fff;
+    color: #000;
+}
+.blocks{
+    display: flex;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+}
+.line{
+    border: 10px solid #434343;
+    background-color: #434343;
+    width: 100%;
+    margin-top: 10%;
+    height: 15%;
+    border-radius: 5px;
+}
+.button_con{
+    margin-top: 5%;
+}
+button{
+    width: 130px;
+    height: 55px;
+    background-color:rgb(220, 137, 4) ;
+    border-color: rgb(220, 137, 4);
+    border-radius: 5px;
+    border:1px ;
+    transition: all ease-in-out 0.4s;
+}   
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
